@@ -62,3 +62,11 @@ set pastetoggle=<f5> " To stop indenting when pasting with the mouse
 " added by jeff to correct annoying wrap-less behavior when navigating
 set whichwrap+=<,>,h,l,[,]
 
+" added by jeff to make lines wrap at only at whitespace, not   mid-word:
+set wrap
+set linebreak
+
+"  to prevent Vim from automatically inserting line breaks in   newly entered text
+set textwidth=0
+set wrapmargin=0
+
